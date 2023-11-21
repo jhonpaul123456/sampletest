@@ -1,0 +1,97 @@
+@import "../../vars.css";
+
+.detailswrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 150px;
+    padding: 30px;
+}
+.detailswrapper .imagewrapper img {
+    max-width: 400px;
+    height: auto;
+    block-size: auto;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.detailswrapper .itemdetails h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.detailswrapper .pricewrapper {
+    margin: 25px 0;
+    border-top: 1px solid var(--border-light-grey);
+    border-bottom: 1px solid var(--border-light-grey);
+    padding: 7px 0;
+}
+
+.detailswrapper .pricewrapper h4 {
+    font-size: 14px;
+    font-weight: 600px;
+}
+
+.detailswrapper .itemdetails .description{
+    font-size: 13px;
+    color: var(--font-colourtwo);
+    word-spacing: 2px;
+}
+
+.detailswrapper .itemdetails .sizeOptions {
+    margin: 30px 0 18px 0;
+}
+
+.detailswrapper .itemdetails .sizeOptions p {
+    color: var(--font-colourtwo);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.detailswrapper .itemdetails .sizeOptions p i {
+    color: var(--required-star);
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.detailswrapper .itemdetails .sizeOptions .sizes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+    margin-top: 11px;
+}
+
+
+.detailswrapper .itemdetails .sizeOptions .sizes .sizeItems button{
+    font-size: 12px;
+    color: var(--font-colourtwo);
+    font-weight: 400;
+    border-color: 1px solid var( --border-light-grey);
+    border-style: solid;
+    
+}
+
+.detailswrapper .itemdetails button {
+    background-color: transparent;
+    border-color: var(--border-dark-grey);
+    padding: 9px 20px;
+}
+.detailswrapper .itemdetails button h6 {
+    color: var(--font-colour);
+    font-size: 14px;
+    letter-spacing: 1.4px;
+}
+
+@media only screen and (max-width: 780px) {
+    .detailswrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .detailswrapper .imagewrapper img  {
+        width: 300px;
+    }
+}
